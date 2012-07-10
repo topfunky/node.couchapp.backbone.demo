@@ -12235,7 +12235,7 @@ $.extend(true, app, {
 
     TagReport: Backbone.Model.extend({
 
-      url: '/tag_report',
+      url: '/tagReport',
 
       defaults: {
         tag: '',
@@ -12260,7 +12260,7 @@ $.extend(true, app, {
 
       model: app.models.Event,
 
-      viewName: 'by_event',
+      viewName: 'byEvent',
 
       viewOptions: {
         key: app.models.activeDay.get('id')
@@ -12301,7 +12301,7 @@ $.extend(true, app, {
 
       model: app.models.Event,
 
-      viewName: 'uncompleted_events',
+      viewName: 'uncompletedEvents',
 
       viewOptions: {
       },

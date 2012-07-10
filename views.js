@@ -1,6 +1,6 @@
 var views = module.exports = exports = {};
 
-views.by_collection = {
+views.byCollection = {
   map: function (doc) {
     if (doc.collection) {
       emit(doc.collection, doc);
@@ -8,7 +8,7 @@ views.by_collection = {
   }
 };
 
-views.by_event = {
+views.byEvent = {
   map: function (doc) {
     if (doc.collection && doc.collection == 'event' && doc.date) {
       emit(doc.date, doc);
@@ -16,7 +16,7 @@ views.by_event = {
   }
 };
 
-views.by_event_title = {
+views.byEventTitle = {
   map: function (doc) {
     if (doc.collection && doc.collection == 'event' && doc.date) {
       emit([doc.date, doc.completedAt, doc.title], doc);
@@ -24,7 +24,7 @@ views.by_event_title = {
   }
 };
 
-views.tag_report_by_day = {
+views.tagReportByDay = {
   map: function (doc) {
     if (doc.collection && doc.collection == 'event' && doc.durationSeconds) {
       emit([doc.date, (doc.tag || 'other')], doc.durationSeconds);
@@ -41,7 +41,7 @@ views.tag_report_by_day = {
   }
 };
 
-views.uncompleted_events = {
+views.uncompletedEvents = {
   map: function (doc) {
     if (doc.collection && doc.collection == 'event' && !doc.completedAt) {
       emit(doc.date, doc);

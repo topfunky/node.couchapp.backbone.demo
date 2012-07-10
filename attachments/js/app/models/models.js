@@ -197,7 +197,7 @@ $.extend(true, app, {
 
     TagReport: Backbone.Model.extend({
 
-      url: '/tag_report',
+      url: '/tagReport',
 
       defaults: {
         tag: '',
