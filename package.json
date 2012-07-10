@@ -4,7 +4,7 @@
   "description": "A demo app to show how to use CouchDB and Backbone for prototypes",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "author": "Geoffrey Grosenbach",
   "license": "BSD",
