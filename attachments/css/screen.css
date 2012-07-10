@@ -1,0 +1,295 @@
+/* line 16, ../sass/_colors.sass */
+body {
+  background-color: "#e0e0e0";
+}
+
+/* line 1, ../sass/_layout.sass */
+body {
+  margin: 0 0 30px 0;
+}
+
+/* line 4, ../sass/_layout.sass */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/_layout.sass */
+#loading {
+  position: fixed;
+  top: 2px;
+  right: 0;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+/* line 16, ../sass/_layout.sass */
+#loading, .loading {
+  color: #999999;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/_typography.sass */
+body, h1, h2, h3, p, ul, li {
+  font-family: "Helvetica Neue";
+}
+
+/* line 4, ../sass/_typography.sass */
+h2, h3 {
+  font-weight: bold;
+}
+
+/* line 7, ../sass/_typography.sass */
+p, ul, li {
+  font-weight: normal;
+}
+
+/* line 10, ../sass/_typography.sass */
+h2 {
+  font-size: 2em;
+}
+
+/* line 13, ../sass/_typography.sass */
+h3 {
+  font-size: 1.5em;
+}
+/* line 16, ../sass/_typography.sass */
+h3 .total_time {
+  font-weight: normal;
+  font-size: 0.7em;
+  color: #999999;
+}
+
+/* line 22, ../sass/_typography.sass */
+ul, li {
+  font-size: 1.1em;
+}
+/* line 25, ../sass/_typography.sass */
+ul .datetime, li .datetime {
+  font-size: 0.9em;
+  color: #999999;
+}
+
+/* line 16, ../sass/_colors.sass */
+body {
+  background-color: "#e0e0e0";
+}
+
+/* line 3, ../sass/_view.sass */
+#container {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 18, ../sass/_view.sass */
+.view.DayView h2 {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #cccccc;
+  margin-top: 1em;
+  margin-left: -30px;
+  line-height: 1em;
+}
+/* line 28, ../sass/_view.sass */
+.view.DayView h2 #previous, .view.DayView h2 #next {
+  cursor: pointer;
+  cursor: hand;
+  font-variant: small-caps;
+  color: #9ecbe1;
+  border-bottom: 1px solid #eeeeff;
+}
+/* line 36, ../sass/_view.sass */
+.view.DayView h2 #previous:hover, .view.DayView h2 #next:hover {
+  color: black;
+  border-bottom: 1px solid #999999;
+}
+/* line 40, ../sass/_view.sass */
+.view.DayView .title {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  text-align: left;
+}
+/* line 46, ../sass/_view.sass */
+.view.DayView .tags {
+  margin-bottom: 0.5em;
+}
+/* line 48, ../sass/_view.sass */
+.view.DayView .tags li {
+  display: inline;
+  border-bottom: none;
+  padding-right: 0.5em;
+}
+/* line 52, ../sass/_view.sass */
+.view.DayView .tags li .name {
+  color: #cccccc;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+/* line 57, ../sass/_view.sass */
+.view.DayView .tags li .tag {
+  font-size: 0.8em;
+  color: #f56a2e;
+}
+/* line 61, ../sass/_view.sass */
+.view.DayView .loading {
+  padding-top: 5px;
+}
+/* line 64, ../sass/_view.sass */
+.view.DayView #new_event {
+  width: 100%;
+  margin: 10px 0;
+}
+/* line 70, ../sass/_view.sass */
+.view .events li {
+  position: relative;
+  list-style-type: none;
+  margin-left: -45px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eeeeff;
+}
+/* line 83, ../sass/_view.sass */
+.view .events li .title {
+  display: block;
+  margin-left: 45px;
+  width: 345px;
+}
+/* line 89, ../sass/_view.sass */
+.view .events li .tag {
+  color: #f56a2e;
+  font-size: 0.8em;
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+/* line 101, ../sass/_view.sass */
+.view .events li .datetime {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 2em;
+  text-align: right;
+}
+/* line 108, ../sass/_view.sass */
+.view .events li .buttons, .view .events li .editing {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  background-color: rgba(204, 204, 204, 0.9);
+  color: white;
+}
+/* line 122, ../sass/_view.sass */
+.view .events li .buttons {
+  text-align: right;
+}
+/* line 125, ../sass/_view.sass */
+.view .events li .buttons .button {
+  color: #4d4d4d;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 133, ../sass/_view.sass */
+.view .events li .buttons .button:hover {
+  color: black;
+  border-bottom: 1px solid gray;
+}
+/* line 137, ../sass/_view.sass */
+.view .events li .buttons .button.delete:hover {
+  color: #f73b4b;
+  border-bottom: 1px solid #f73b4b;
+}
+/* line 142, ../sass/_view.sass */
+.view .events li .editing .edit_event {
+  margin-left: 45px;
+  width: 400px;
+}
+/* line 149, ../sass/_view.sass */
+.view.ClockView {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  width: 128px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* line 157, ../sass/_view.sass */
+.view.ClockView .hours {
+  color: #bbbbbb;
+  font-size: 28px;
+  padding-right: 1px;
+}
+/* line 163, ../sass/_view.sass */
+.view.ClockView .minutes {
+  color: #999999;
+  font-size: 20px;
+}
+/* line 168, ../sass/_view.sass */
+.view.ClockView .total_time, .view.ClockView .elapsed {
+  text-align: right;
+  position: absolute;
+  width: 60px;
+  color: #333333;
+  margin: 0;
+  padding-bottom: 1px;
+  overflow: hidden;
+}
+/* line 182, ../sass/_view.sass */
+.view.ClockView .total_time {
+  right: 68px;
+  bottom: 0;
+}
+/* line 186, ../sass/_view.sass */
+.view.ClockView .elapsed {
+  right: 0;
+  bottom: 1px;
+}
+
+/* line 2, ../sass/_header.sass */
+#header {
+  background-color: #333333;
+}
+/* line 6, ../sass/_header.sass */
+#header #contents {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 11, ../sass/_header.sass */
+#header #contents h1 {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.1em;
+  color: white;
+}
+/* line 20, ../sass/_header.sass */
+#header #contents ul {
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+/* line 25, ../sass/_header.sass */
+#header #contents ul li {
+  display: inline;
+}
+/* line 29, ../sass/_header.sass */
+#header #contents a, #header #contents a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #999999;
+  font-variant: small-caps;
+}

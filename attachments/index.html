@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Tracker</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header">
+      <div id="contents">
+        <h1>Time Tracker</h1>
+        <ul>
+          <li><a href="#today">today</a></li>
+          <li><a href="#uncompleted">todo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="loading" class="loading"></div>
+
+    <div id="container" class="view">Loading...</div>
+
+    <script id='template-day-view' type='text/html'>
+      <h2>
+        <a id="previous">prev</a>
+        {{id}}
+        <a id="next">next</a>
+      </h2>
+      <h3>
+        {{name}}
+      </h3>
+      <div class='tags'></div>
+      <ul class='events'></ul>
+      <input type="text" id="new_event" />
+      <div id="loading_event" class="loading">Synchronizing...</div>
+    </script>
+
+    <script id='template-event-view' type='text/html'>
+      <span class='title'>
+        {{title}}
+      </span>
+      <span class='tag'>
+        {{tag}}
+      </span>
+      <span class='datetime'>
+        {{duration}}
+      </span>
+      <div class="buttons">
+        <a class="delete button">delete</a> |
+        <a class="edit button">edit</a> |
+        <a class="toggle button">toggle</a>
+      </div>
+      <div class="editing">
+        <input type="text" class="edit_event" />
+      </div>
+    </script>
+
+    <script id='template-tag-report-view' type='text/html'>
+      <ul class='tags'>
+        {{#tags}}
+        <li>
+          <span class='name'>
+            {{tag}}
+          </span>
+          <span class='tag'>
+            {{duration}}
+          </span>
+        </li>
+        {{/tags}}
+      </ul>
+    </script>
+
+    <script id='template-clock-view' type='text/html'>
+      <div class='total_time'>
+        {{{totalTime}}}
+      </div>
+      <div class='elapsed'>
+        {{{elapsedTime}}}
+      </div>
+    </script>
+
+    <script id='template-uncompleted-view' type='text/html'>
+      <h3>
+        Uncompleted Tasks
+      </h3>
+      <ul class='events'></ul>
+      <div id="loading_event" class="loading">Synchronizing...</div>
+    </script>
+
+    <script src="js/default.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
