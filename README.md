@@ -8,13 +8,19 @@ This code shows how to use Node.js and CouchDB to serve JavaScript client-side a
 
 [Download](http://couchdb.apache.org/), install, and start the CouchDB server.
 
+Use the CouchDB browser-based console to create a CouchDB dataabase named `time_track_demo`.
+
 Install dependencies:
 
     npm install
 
 Then:
 
-    ./node_modules/.bin/couchapp push app.js http://localhost:5984/time_track_demo
+    ./bin/push
+
+Optionally, bundle client side assets to `attachments/js/default.js` with:
+
+    ./bin/build
 
 ## The Code
 

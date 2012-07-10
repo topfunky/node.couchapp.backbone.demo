@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
+# Combine client-side assets.
+
 cd attachments/js && cat vendor/sha1.js vendor/jquery-1.4.2.js vendor/jquery.couch-0.11.js vendor/util/underscore.js vendor/util/json2.js vendor/util/strftime.js vendor/util/jquery.hotkeys.js vendor/frameworks/backbone-0.3.3.js vendor/frameworks/backbone-couchdb.js vendor/tmpl/handlebars-0.9.0.pre.5.js app/helpers/util.js app/helpers/keys.js app/models/models.js app/collections/collections.js app/controllers/controllers.js app/views/prototypes.js app/views/views.js application.js > default.js
