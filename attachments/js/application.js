@@ -7,8 +7,8 @@ if ((typeof app) === 'undefined') {
 
 $(document).ready(function () {
 
-  Backbone.couchConnector.databaseName = "time_track";
-  Backbone.couchConnector.ddocName = "time_track";
+  Backbone.couchConnector.databaseName = "time_track_demo";
+  Backbone.couchConnector.ddocName = "app";
   Backbone.couchConnector.viewName = "by_collection";
   // If set to true, the connector will listen to the changes feed
   // and will provide your models with real time remote updates.
