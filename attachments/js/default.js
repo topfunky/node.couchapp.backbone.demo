@@ -200,7 +200,6 @@ function binb2b64(binarray)
   }
   return str;
 }
-
 /*!
  * jQuery JavaScript Library v1.4.2
  * http://jquery.com/
@@ -6441,7 +6440,6 @@ jQuery.each([ "Height", "Width" ], function( i, name ) {
 window.jQuery = window.$ = jQuery;
 
 })(window);
-
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not
 // use this file except in compliance with the License. You may obtain a copy of
 // the License at
@@ -7110,7 +7108,6 @@ window.jQuery = window.$ = jQuery;
   }
 
 })(jQuery);
-
 // Underscore.js
 // (c) 2010 Jeremy Ashkenas, DocumentCloud Inc.
 // Underscore is freely distributable under the terms of the MIT license.
@@ -7824,7 +7821,6 @@ window.jQuery = window.$ = jQuery;
   };
 
 })();
-
 /*
     http://www.JSON.org/json2.js
     2009-09-29
@@ -8306,7 +8302,6 @@ replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
         };
     }
 }());
-
 /*
  strftime for Javascript
  Copyright (c) 2008, Philip S Tellis <philip@bluesmoon.info>
@@ -9038,7 +9033,6 @@ Date.prototype.strftime=function(fmt)
  * \par 1.0 - 2008/04/22:
  * - Initial release with support for a, A, b, B, c, C, d, D, e, H, I, j, m, M, p, r, R, S, t, T, u, w, y, Y, z, Z, and %
  */
-
 /*
  * jQuery Hotkeys Plugin
  * Copyright 2010, John Resig
@@ -9170,7 +9164,6 @@ Date.prototype.strftime=function(fmt)
 	});
 
 })( jQuery );
-
 //     Backbone.js 0.3.3
 //     (c) 2010 Jeremy Ashkenas, DocumentCloud Inc.
 //     Backbone may be freely distributed under the MIT license.
@@ -10182,7 +10175,6 @@ Date.prototype.strftime=function(fmt)
   };
 
 })();
-
 // (c) 2011 Jan Monschke
 // backbone-couchdb.js is licensed under the MIT license.
 // I developed this connector because I didn't want to write an own server that persists
@@ -10434,7 +10426,6 @@ Backbone.couchConnector = {
       Backbone.couchConnector._changes(model);
     }
   }
-
 // lib/handlebars/parser.js
 /* Jison generated parser */
 var handlebars = (function(){
@@ -11852,7 +11843,6 @@ Handlebars.VM = {
 };
 
 Handlebars.compile = Handlebars.VM.compile;;
-
 if ((typeof app) === 'undefined') {
   var app = {};
 }
@@ -12017,7 +12007,6 @@ $.extend(true, app, {
   }
 });
 
-
 if ((typeof app) === 'undefined') {
   var app = {};
 }
@@ -12047,7 +12036,6 @@ $.extend(true, app, {
 
   }
 });
-
 
 if ((typeof app) === 'undefined') {
   var app = {};
@@ -12264,7 +12252,6 @@ $.extend(true, app, {
 
   }
 });
-
 // collections
 $.extend(true, app, {
   collections: {
@@ -12368,7 +12355,6 @@ $.extend(true, app, {
   }
 });
 
-
 if ((typeof app) === 'undefined') {
   var app = {};
 }
@@ -12424,7 +12410,6 @@ $.extend(true, app, {
 
   }
 });
-
 $.extend(true, app, {
   views: {
     prototypes: {
@@ -12450,7 +12435,6 @@ $.extend(true, app, {
     }
   }
 });
-
 
 if ((typeof app) === 'undefined') {
   var app = {};
@@ -12725,6 +12709,9 @@ $.extend(true, app, {
   }
 });
 
+/*jslint white: false, onevar: true, browser: true, devel: true, undef: true, nomen: true, eqeqeq: true, plusplus: true, bitwise: true, regexp: true, strict: false, newcap: true, immed: true */
+/*global _, $, window, Backbone, Mustache */
+
 if ((typeof app) === 'undefined') {
   var app = {};
 }
@@ -12752,4 +12739,3 @@ $(document).ready(function () {
   Backbone.history.start();
 
 });
-

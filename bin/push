@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Upload application to CouchDB.
+
+./node_modules/.bin/couchapp push app.js http://localhost:5984/time_track_demo 
